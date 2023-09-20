@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     scroll-behavior: smooth;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -19,7 +19,7 @@
 
 /* Navbar design */
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -409,4 +409,77 @@ a{
 }
 #project-4 .project-content{
     right: 0%;
+}
+
+/* ================= Skill section ============ */
+.skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
+.skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+}
+.skill-fade-text{
+    font-size: 15em;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+    position: absolute;
+    bottom: -35.5%;
+    right: -25%;
+    user-select: none;
+    overflow-y: hidden;
+}
+.blob-style{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blob  3s linear infinite;
+    z-index: -1;
+}
+@keyframes blob {
+    50%{
+        top: 54%;
+        left: 56%;
+
+    }
+}
+.skill-logo{
+    width: 55px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.skill-logo:hover{
+    transform: scale(1.5);
+}
+.skill-heading{
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 50px;
+    color: var(--bg0range);
+}
+.caps{
+    font-size: 90px;
+}
+.skill-sub-heading{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+.skill-sub-heading p {
+    margin: 15px 0;
+
 }
